@@ -20,7 +20,7 @@ def read_excel():
                 tmp[now_class].append(time)
         class_data.append(tmp)
 
-    exclude_path = f"{os.getcwd()}/exclude_time"
+    exclude_path = f"{os.getcwd()}/exclude_time.txt"
     if os.stat(exclude_path).st_size != 0:
         f = open(exclude_path, 'r', encoding="UTF-8")
         lines = f.readlines()
