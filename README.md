@@ -4,15 +4,17 @@
 
 ---
 1. 아우누리에서 각 수업별 시간을 엑셀로 받아주세요.
-2. 엑셀 파일을 excel 폴더에 넣어주세요.
-3. main.py를 실행해주세요
-4. output 폴더에 가능한 시간표 조합이 엑셀 파일로 저장됩니다.
+2. [Release](https://github.com/kongwoojin/koreatech_time_table_generator/releases)에서 실행 파일을 받아주세요.
+3. 처음 실행 시, excel, output 폴더와 exclude_time.txt가 생성됩니다.
+4. 엑셀 파일을 excel 폴더에 넣어주세요.
+5. 실행 파일을 다시 실행해주세요.
+6. output 폴더에 가능한 시간표 조합이 엑셀 파일로 저장됩니다.
 
 
 ### 공강 만드는 법
 
 ---
-exclude_time에 아래와 같이 원하는 공강 시간을 작성해주세요. (띄어쓰기 없이 작성해주세요!)
+exclude_time.txt에 아래와 같이 원하는 공강 시간을 작성해주세요. (띄어쓰기 없이 작성해주세요!)
 ```
 금05A~09B
 ```
