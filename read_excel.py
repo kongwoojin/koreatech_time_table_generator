@@ -8,7 +8,7 @@ def read_excel():
     path = f"{os.getcwd()}/excel/"
     file_list = os.listdir(path)
     for file in file_list:
-        if file.endswith("placeholder"):
+        if file.endswith("placeholder") or file.startswith("#"):
             continue
         file_path = path + file
         df = pd.read_excel(file_path, sheet_name=0, usecols=[4, 11])
