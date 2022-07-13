@@ -71,11 +71,15 @@ def generate_time_table():
     create_directory()
     create_file()
     clean_output()
-    add_time_table(empty_table(), read_excel(), 0)
-    if count_of_time_table == 0:
-        print("Can't generate timetable!")
+    class_data = read_excel()
+    if len(class_data) == 0:
+        print("No excel found!")
     else:
-        print(f"{count_of_time_table} timetable generated!")
+        add_time_table(empty_table(), class_data, 0)
+        if count_of_time_table == 0:
+            print("Can't generate timetable!")
+        else:
+            print(f"{count_of_time_table} timetable generated!")
 
 
 if __name__ == "__main__":
