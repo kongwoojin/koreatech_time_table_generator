@@ -1,6 +1,7 @@
 import os
 from read_excel import read_excel
 from empty_time_table import empty_table
+from create_directory import create_directory
 from copy import deepcopy
 
 count_of_time_table = 0
@@ -66,6 +67,7 @@ def add_time_table(init_time_table, class_data, num):
 
 
 def generate_time_table():
+    create_directory()
     clean_output()
     add_time_table(empty_table(), read_excel(), 0)
     if count_of_time_table == 0:
