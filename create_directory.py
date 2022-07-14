@@ -9,3 +9,4 @@ def create_directory():
         os.makedirs(output_path)
     if not os.path.exists(excel_path):
         os.makedirs(excel_path)
+    print("Directory created!")

@@ -7,3 +7,4 @@ def create_file():
     if not os.path.exists(exclude_path):
         f = open(exclude_path, 'w', encoding="UTF-8")
         f.close()
+    print("File created!")
