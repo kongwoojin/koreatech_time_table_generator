@@ -80,6 +80,7 @@ def generate_time_table():
             print("Can't generate timetable!")
         else:
             print(f"{count_of_time_table} timetable generated!")
+    input("Press Enter to finish...")
 
 
 if __name__ == "__main__":
